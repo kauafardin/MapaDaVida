@@ -1,21 +1,17 @@
 public class Adolescente extends Pessoa {
-    public Adolescente(String nome, int idade, String hobby) {
-        super(nome, idade, hobby);
+
+    public Adolescente(String nome) {
+        super(nome);
     }
 
     @Override
-    public void viver() {
-        System.out.println("=== ADOLESCÊNCIA ===");
-    }
-
-    public void estudar() {
-        System.out.println("\n[15-16 anos]");
-        System.out.println(" - Mudei de escola novamente;");
-        System.out.println(" - Comecei a estudar no turno da noite;");
-        System.out.println(" - Comecei a fazer aulas de violão e logo parei;");
-
-        System.out.println("\n[17-18 anos]");
-        System.out.println(" - Competi com a escola em outro torneio de tênis de mesa e ganhei 2º lugar;");
-        System.out.println(" - Continuei estudando e praticando esportes;");
+    public void mostrarEventos() {
+        System.out.println("=== Adolescência de " + nome + " ===");
+        System.out.println("Com 13 anos conquistei o 2º lugar no torneio escolar de tênis de mesa.");
+        System.out.println("Com 14 anos me formei no 9º ano e mudei de escola.");
+        System.out.println("Com 16 anos perdi meu avô no começo da pandemia.");
+        System.out.println("Com 16 anos conheci minha atual namorada.");
+        System.out.println("Com 17 anos me formei no ensino médio.");
+        System.out.println("Com 17 anos comprei meu primeiro notebook.");
     }
 }

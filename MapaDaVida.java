@@ -1,22 +1,16 @@
 public class MapaDaVida {
     public static void main(String[] args) {
-        // INFÂNCIA
-        Pessoa euCrianca = new Crianca("Kauã", 5, "jogar bola");
-        euCrianca.viver();
-        ((Crianca) euCrianca).estudar();
-        System.out.println();
+        String nome = "Kauã";
 
-        // ADOLESCÊNCIA
-        Pessoa euAdolescente = new Adolescente("Kauã", 15, "jogar videogame");
-        euAdolescente.viver();
-        ((Adolescente) euAdolescente).estudar();
-        System.out.println();
+        Pessoa[] fases = {
+            new Crianca(nome),
+            new Adolescente(nome),
+            new Adulto(nome)
+        };
 
-        // ADULTEZ
-        Pessoa euAdulto = new Adulto("Kauã", 20, "estudar e passar o tempo com a família");
-        euAdulto.viver();
-        ((Adulto) euAdulto).trabalhar();
-
-        System.out.println("\nO ciclo da minha vida continua sendo escrito!");
+        for (Pessoa p : fases) {
+            p.mostrarEventos();
+            System.out.println();
+        }
     }
 }

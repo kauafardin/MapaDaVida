@@ -1,24 +1,18 @@
 public class Crianca extends Pessoa {
-    public Crianca(String nome, int idade, String hobby) {
-        super(nome, idade, hobby);
+
+    public Crianca(String nome) {
+        super(nome);
     }
 
     @Override
-    public void viver() {
-        System.out.println("=== INFÂNCIA ===");
-    }
-
-    public void estudar() {
-        System.out.println("\n - Nascimento 08/03/2004;");
-        System.out.println("\n[5 anos]");
-        System.out.println(" - Ingressei na escola;");
-        System.out.println(" - Passei minhas primeiras férias longe dos meus pais;");
-        System.out.println(" - Conheci meu melhor amigo;");
-
-        System.out.println("\n[8-14 anos]");
-        System.out.println(" - Mudei de escola;");
-        System.out.println(" - Fiz novos amigos;");
-        System.out.println(" - Ganhei meu primeiro torneio de tênis de mesa;");
-        System.out.println(" - Comecei a ajudar meus pais na lavoura;");
+    public void mostrarEventos() {
+        System.out.println("=== Infância de " + nome + " ===");
+        System.out.println("Com 5 anos ingressei na escola pela primeira vez.");
+        System.out.println("Com 5 anos conheci meu melhor amigo.");
+        System.out.println("Com 7 anos ingressei na escolinha de futebol (mas parei logo depois).");
+        System.out.println("Com 7 anos passei minhas primeiras férias longe de casa.");
+        System.out.println("Com 7 anos fui à praia pela segunda vez (a primeira eu não lembro).");
+        System.out.println("Com 11 anos mudei de escola.");
+        System.out.println("Com 12 anos conquistei o 1º lugar no torneio de tênis de mesa da escola.");
     }
 }
